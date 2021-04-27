@@ -1,8 +1,8 @@
 
 main {
 	margin: 0 auto;
-	max-width: 90%;
-  padding: 50px 30px;
+	max-width: 100%;
+  padding: 0px;
 }
 :root {
   --primary: #8c54ff;
@@ -15,7 +15,6 @@ main {
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
-
 }
 
 * {
@@ -52,34 +51,6 @@ h6 {
   line-height: 1.25;
 }
 
-h1 {
-  font-size: 2.25rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.75rem;
-}
-
-h4 {
-  font-size: 1.5rem;
-}
-
-h5 {
-  font-size: 1.25rem;
-}
-
-h6 {
-  font-size: 1rem;
-}
-
-p {
-  font-size: 1.1rem;
-  margin-top: 0;
-}
 
 a {
   color: var(--tertiary);
@@ -99,15 +70,17 @@ header a {
   color: var(--light);
 }
 footer {
-  background: var(--secondary);
-  margin-bottom:0;
-  justify-self:flex-end;
+  /* background: var(--secondary); */
+  margin-bottom: auto;
   margin-top: auto;
   margin-left: auto;
   margin-right: auto;
-  max-height: 15%;
+  /* max-height: 10%; */
   bottom: 0;
-  position: absolute;
+  padding: 0;
+  position: fixed;
+  /* justify-content: flex-end; */
+
 }
 button {
   font-size: 1rem;
@@ -138,9 +111,14 @@ span[role="img"] {
   cursor: default;
 }
 
-form {
-  width: 40%;
+span[role="link"] {
+  cursor: default;
 }
+
+form {
+border: #000000 solid 0.2rem;  
+padding: 1rem;
+} 
 
 input {
   font-size: 1rem;
@@ -160,13 +138,13 @@ li {
   list-style: none;
 }
 
-nav a:hover {
+/* nav a:hover {
   text-decoration: none;
 }
 
-nav  li {
+nav li {
   cursor: pointer;
-}
+} */
 
 textarea {
 	width: 600px;
@@ -175,8 +153,9 @@ textarea {
 	padding: 5px;
 }
 
-.container {
+.container{
   width: 85%;
+  padding:0;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -240,14 +219,11 @@ textarea {
   padding-bottom: var(--spacing-two);
 }
 
-.card {
-  width: 25%;
-  text-align: center;
-}
+
 
 .img-thumbnail {
-  width: auto;
-  height: 300px;
+  max-width: 560px;
+  height: 720px;
   margin-bottom: 50px;
   cursor: pointer;
 }
@@ -298,8 +274,4 @@ a {
 	margin-left: -2px;
 	margin-right: -2px;
 	
-}
-
-.navActive {
-  color: var(--primary);
 }

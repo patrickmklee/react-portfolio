@@ -20,17 +20,15 @@ function Header(props) {
     //     console.log(`${name} clicked`)
     //   }
     return (
-    <header className="flex-row my-5">
-        <h2>
-            <a data-testid="link" href="/">
-            <span role="img" aria-label="camera"></span>Patrick Lee
-            </a>
-        </h2>
-        <Nav
-        pages={pages}
-        currentPage = {currentPage}
-        setCurrentPage = {setCurrentPage} >
-        </Nav>
+    <header className="navbar navbar-expand-md">
+        <div className="container-fluid flex-direction-row"> 
+        <a className="navbar navbar-brand" data-testid="brand" href="/">Patrick Lee</a>
+            <Nav
+            pages={pages}
+            currentPage = {currentPage}
+            setCurrentPage = {setCurrentPage} >
+            </Nav>
+        </div>
     </header>
   );
 }

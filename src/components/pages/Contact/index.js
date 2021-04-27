@@ -8,6 +8,7 @@ function Contact() {
 
     const { name, email, message } = formState;
     function handleChange(e) {
+        e.stopPropagation();
         if (e.target.name === 'email') {
             const isValid = validateEmail(e.target.value);
             console.log(isValid);
@@ -22,6 +23,7 @@ function Contact() {
                 setErrorMessage(`${e.target.name} is required.`);
             } else {
                 setErrorMessage('');
+                
             }
         }
         console.log('errorMessage', errorMessage);
@@ -32,32 +34,34 @@ function Contact() {
     }
     function handleSubmit(e) {
         e.preventDefault();
-        // if (errorMessage !== '') {
-
+        // if (errorMessage !== '')
         console.log(formState);
       }
 return (
     <section>
-        <h1>Send a Message</h1>
         <form id="contact-form" className="form" onSubmit={handleSubmit}>
-            <div>
-                <label htmlFor="name">Name:</label>
-                <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
+            <legend>Send a Message</legend>
+            <div className="form-group">
+                <label className="form-label" htmlFor="name">Name:</label>
+                <input className="form-control" type="text" name="name" defaultValue={name} onBlur={handleChange} required />
             </div>
-            <div>
-                <label htmlFor="email">Email address:</label>
-                <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
+            <div className="form-group">
+                <label className="form-label" htmlFor="email">Email address:</label>
+                <input className="form-control" type="email" name="email" defaultValue={email} onBlur={handleChange} required />
             </div>
-            <div>
-                <label htmlFor="message">Message:</label>
-                <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5" />
+            <div className="form-group">
+            <label className="form-label" htmlFor="message">Message:</label>
+            <textarea className="form-control"  required name="message" defaultValue={message} onBlur={handleChange} rows="5" required />
             </div>
             {errorMessage && (
-                <div>
+                <div classname="col-12">
                     <p className="error-text">{errorMessage}</p>
                 </div>
             )}
-            <button className="button" type="submit">Send</button>
+
+            <div classname="col-12">
+            <button className="form-button" type="submit" role="button">Send</button>
+            </div>
         </form>
     </section>
   );

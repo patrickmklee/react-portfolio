@@ -8,30 +8,48 @@ function Portfolio() {
         {
             // displayprojectName:
             name:"note-taker",
-            github:"https://github.com/patrickmklee/ExpressNotes"
+            github:"https://github.com/patrickmklee/ExpressNotes",
+            description: "PLACEHOLDER"
         },
         {
             name:"tech-blog",
-            github:"https://github.com/patrickmklee/tech_blog"
+            github:"https://github.com/patrickmklee/tech_blog",
+            description: "PLACEHOLDER"
+        },
+        {
+            name:"weather-dashboard",
+            github:"https://github.com/patrickmklee/WeatherDashboard",
+            description: "PLACEHOLDER"
+        },
+        {
+            name:"pets-r-us",
+            github:"https://github.com/patrickmklee/Pet-Adoption",
+            description: "PLACEHOLDER"
+        },
+        {
+            name:"password-generator",
+            github:"https://github.com/patrickmklee/Password-Generator",
+            description: "Generates randomized password strings"
         }
-    ]
+    ];
     // const { name, description } = currentCategory;
     return (
-        <section>
-            <ul>
-            {
-            projects.map( project => {
+        
+            <section className="row">
+            
+            {projects.map( project => {
                 return (
-                <li>
                     <Project
-                    key = {project.name}
-                    projectName={formatDisplayName(project.name)} >
-                    </Project>
-                </li>);
-                })
-            }
-            </ul>
-        </section>
+                    key={project.name}
+                    name={project.name}
+                    displayName={formatDisplayName(project.name)}
+                    />
+                )
+             })
+            } 
+            
+            </section>
+        
     );
   }
 
