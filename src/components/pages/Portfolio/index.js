@@ -47,6 +47,7 @@ function Portfolio() {
                     <Project
                     key={project.name}
                     name={project.name}
+                    github={project.github}
                     displayName={formatDisplayName(project.name)}
                     />
                 )

@@ -1,3 +1,4 @@
+import './App.css';
 import React, {useState}  from 'react';
 // import logo from './logo.svg';
 import Footer from './components/Footer'
