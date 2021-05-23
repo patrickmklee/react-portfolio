@@ -20,9 +20,9 @@ function Header(props) {
     //     console.log(`${name} clicked`)
     //   }
     return (
-    <header className="navbar navbar-expand-md">
+    <header className="navbar bg-light navbar-expand-md">
         <div className="container-fluid flex-direction-row"> 
-        <a className="navbar navbar-brand" data-testid="brand" href="/">Patrick Lee</a>
+        <div className="navbar navbar-brand" data-testid="brand" ><h1 className="navbar-brand" onClick={ () => {setCurrentPage(pages[0])}} >Patrick Lee</h1></div>
             <Nav
             pages={pages}
             currentPage = {currentPage}
