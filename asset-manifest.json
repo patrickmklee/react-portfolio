@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.07a1303c.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.5522995a.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.5522995a.chunk.js.map",
+    "main.css": "/react-portfolio/static/css/main.aa11db56.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.3cd7c92f.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.3cd7c92f.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.c6fae4ec.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.c6fae4ec.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/react-portfolio/static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.2fef6d72.chunk.js": "/react-portfolio/static/js/2.2fef6d72.chunk.js",
-    "static/js/2.2fef6d72.chunk.js.map": "/react-portfolio/static/js/2.2fef6d72.chunk.js.map",
+    "static/js/2.efc65589.chunk.js": "/react-portfolio/static/js/2.efc65589.chunk.js",
+    "static/js/2.efc65589.chunk.js.map": "/react-portfolio/static/js/2.efc65589.chunk.js.map",
     "static/js/3.7bb31c5f.chunk.js": "/react-portfolio/static/js/3.7bb31c5f.chunk.js",
     "static/js/3.7bb31c5f.chunk.js.map": "/react-portfolio/static/js/3.7bb31c5f.chunk.js.map",
     "index.html": "/react-portfolio/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/react-portfolio/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.07a1303c.chunk.css.map": "/react-portfolio/static/css/main.07a1303c.chunk.css.map",
-    "static/js/2.2fef6d72.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.2fef6d72.chunk.js.LICENSE.txt",
+    "static/css/main.aa11db56.chunk.css.map": "/react-portfolio/static/css/main.aa11db56.chunk.css.map",
+    "static/js/2.efc65589.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.efc65589.chunk.js.LICENSE.txt",
     "static/media/note-taker.png": "/react-portfolio/static/media/note-taker.8ac4e0c3.png",
     "static/media/password-generator.png": "/react-portfolio/static/media/password-generator.bc1e8413.png",
     "static/media/pets-r-us.png": "/react-portfolio/static/media/pets-r-us.36f03f60.png",
@@ -24,8 +24,8 @@
   "entrypoints": [
     "static/js/runtime-main.c6fae4ec.js",
     "static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.2fef6d72.chunk.js",
-    "static/css/main.07a1303c.chunk.css",
-    "static/js/main.5522995a.chunk.js"
+    "static/js/2.efc65589.chunk.js",
+    "static/css/main.aa11db56.chunk.css",
+    "static/js/main.3cd7c92f.chunk.js"
   ]
 }
