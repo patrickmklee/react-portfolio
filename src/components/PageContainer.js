@@ -25,12 +25,13 @@ const renderPage = ({name}) => {
 const PageContainer = ({page}) => {
   return (
       <main>
-        <div className="jumbotron bg-secondary">
-        <h1 data-testid="h1tag">{capitalizeFirstLetter(page.name)}</h1>
-        <p data-testid="pagedesctag">{page.description}</p>
-      </div>
+        <div className="jumbotron mt-1 bg-secondary">
+          <h1 data-testid="h1tag">{capitalizeFirstLetter(page.name)}</h1>
+          <p data-testid="pagedesctag">{page.description}</p>
+        </div>
         
-          {renderPage(page)}
+        {renderPage(page)}
+        
       </main>
     
   );

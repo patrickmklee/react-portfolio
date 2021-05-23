@@ -38,7 +38,7 @@ function Contact() {
         console.log(formState);
       }
 return (
-    <section>
+    <section className="mb-4">
         <form id="contact-form" className="form" onSubmit={handleSubmit}>
             <legend>Send a Message</legend>
             <div className="form-group">

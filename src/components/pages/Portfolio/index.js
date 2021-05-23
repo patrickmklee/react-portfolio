@@ -27,6 +27,11 @@ function Portfolio() {
             description: "PLACEHOLDER"
         },
         {
+            name:"wine-n-dine",
+            github:"https://github.com/patrickmklee/Wine-N-Dine",
+            description: "Search for food and drink recipes"
+        },
+        {
             name:"password-generator",
             github:"https://github.com/patrickmklee/Password-Generator",
             description: "Generates randomized password strings"

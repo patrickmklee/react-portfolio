@@ -28,7 +28,7 @@ function App() {
       currentPage={currentPage}
       setCurrentPage={setCurrentPage} >
     </Header>
-        <PageContainer page={currentPage}        >
+        <PageContainer page={currentPage} >
         
         </PageContainer>
         
