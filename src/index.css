@@ -68,7 +68,7 @@ header a {
   color: var(--light);
 }
 footer {
-  /* background: var(--secondary); */
+  background: var(--secondary);
   margin-bottom: 0px;
   margin-top: auto;
   margin-left: auto;
