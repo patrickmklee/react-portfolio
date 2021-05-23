@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-// import PhotoList from "../PhotoList";
+
 import {validateEmail} from "../../../utils/helpers"
-function Contact() {
+
+const Contact = () => {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
     const [errorMessage, setErrorMessage] = useState('');
 
